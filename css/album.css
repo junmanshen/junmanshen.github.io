@@ -1,0 +1,95 @@
+/* ###########################
+作者：JMS
+联系：JMS@qq.com
+日期：2022年11月11日
+版权所有，请勿抄袭
+###########################*/
+/*01.结构化框架容器的样式 */
+
+ul#album {
+    background-color: #efd9c1;
+    display: flex;
+    flex-flow: row wrap;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+ul#album li {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(100% / 3 - 60px);
+    margin: 15px;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+ul#album li:hover {
+    opacity: 1;
+    transition: 2s;
+}
+
+ul#album li a:link,
+ul#album li a:visited,
+ul#album li a:hover {
+    display: block;
+    background-color: rgba(255, 255, 255, .6);
+    color: rgba(0, 0, 0, .7);
+    border-bottom: none;
+    padding: 4px;
+    border: 5px dotted #c7d8c6;
+}
+
+ul#album img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* 炒鸡小屏手机 (phones, 600px and down) */
+
+
+
+@media only screen and (max-width: 600px) {
+    ul#album li {
+        flex-basis: auto;
+    }
+}
+
+
+
+/* 中等手机以及竖屏平板 (portrait tablets and large phones, 600px and up) */
+
+
+
+@media only screen and (min-width: 600px) {
+    ul#album li {
+        flex-basis: calc(100% / 2 - 40px);
+    }
+}
+
+
+
+/* 横屏平板 (landscape tablets, 768px and up) */
+
+
+
+@media only screen and (min-width: 768px) {
+    ul#album li {
+        flex-basis: calc(100% / 3 - 60px);
+    }
+}
+
+
+
+/* 中小型笔记本电脑及台式机 (laptops/desktops, 992px and up) */
+
+
+
+@media only screen and (min-width: 992px) {}
+
+
+
+/* 宽屏笔记本及台式机 (large laptops and desktops, 1200px and up) */
+
+
+
+@media only screen and (min-width: 1200px) {}

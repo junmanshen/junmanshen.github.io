@@ -1,0 +1,129 @@
+/* ###########################
+作者：JMS
+联系：JMS@qq.com
+日期：2022年11月11日
+版权所有，请勿抄袭
+###########################*/
+/*01.结构化框架容器的样式 */
+html {
+    background-image: url(../images/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: small;
+    width: center;
+    margin: none;
+}
+
+footer {
+    padding: 40px;
+    text-align: center;
+    color: #ffbf6c;
+    font-size: 110%;
+    line-height: 2;
+    font-weight: bolder;
+}
+
+/* 02. Block elements */
+
+h1 {
+    text-align: center;
+    color: #ffcdd2;
+    font-size: 60px;
+    padding-top: 400px;
+}
+
+h2 {
+    text-align: center;
+    color: #ffbf6c;
+    font-size: 120%;
+    line-height: 2;
+    font-weight: bolder;
+    text-shadow: 1px 1px 10px white;
+}
+
+/* 03. Inline Elements */
+img {
+    width: 250px;
+    position: absolute;
+    left: 590px;
+    top: 60px;
+    opacity: .5;
+    transition: 1.5s;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+a:link,
+a:visited,
+a:hover {
+    color: #ffbf6c;
+    text-decoration: none;
+    border-bottom: none;
+}
+
+a:hover {
+    text-shadow: 5px 5px 10px white;
+    color: #ffcdd2;
+}
+/*06.自适应样式 */
+
+##################*/
+
+
+
+/* 炒鸡小屏手机 (phones, 600px and down) */
+
+
+
+@media only screen and (max-width: 600px) {
+    nav {
+        margin-top: 1px;
+    }
+
+    nav ul {
+        flex-flow: column;
+    }
+
+    nav ul li {
+        border-bottom: 1px solid rgba(255, 255, 255, .7)
+    }
+}
+
+
+
+/* 中等手机以及竖屏平板 (portrait tablets and large phones, 600px and up) */
+
+
+
+@media only screen and (min-width: 600px) {}
+
+
+
+/* 横屏平板 (landscape tablets, 768px and up) */
+
+
+
+@media only screen and (min-width: 768px) {}
+
+
+
+/* 中小型笔记本电脑及台式机 (laptops/desktops, 992px and up) */
+
+
+
+@media only screen and (min-width: 992px) {}
+
+
+
+/* 宽屏笔记本及台式机 (large laptops and desktops, 1200px and up) */
+
+
+
+@media only screen and (min-width: 1200px) {}

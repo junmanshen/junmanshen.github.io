@@ -1,0 +1,123 @@
+nav {
+    background-color: #c7d8c6;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+nav ul li {
+    flex: auto;
+}
+
+nav ul li a:link,
+nav ul li a:hover,
+nav ul li a:visited {
+    display: block;
+    padding-bottom: 15px;
+    color: darkslategrey;
+    font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", SimHei, "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", "WenQuanYi Zen Hei Sharp", sans-serif;
+    font-size: 120%;
+    text-shadow: 5px 5px 10px rgba(0, 100, 0, .5);
+    text-align: center;
+    border-bottom: none;
+}
+
+nav a:hover {
+    background-color: rgba(144, 188, 144, .5);
+}
+
+
+nav ul li:nth-child(n+2) {
+    border-left: 2px solid rgba(0, 100, 0, .2);
+}
+
+nav li:nth-child(n+1) {
+    border-bottom: 2px solid rgba(0, 100, 0, .2);
+
+}
+
+li.dropdown {
+    position: relative;
+}
+
+
+li.dropdown:hover ul.dropdown-content {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    background-color: #c7d8c6;
+    width: 100%;
+    font-size: 16px;
+}
+
+ul.dropdown-content {
+    display: block;
+    display: none;
+}
+
+li.dropdown ul.dropdown-content li {
+    border-left: none;
+    text-align: center;
+}
+
+
+/* ###############
+
+06.自适应样式 
+
+##################*/
+
+
+
+/* 炒鸡小屏手机 (phones, 600px and down) */
+
+
+
+@media only screen and (max-width: 600px) {
+    nav {
+        margin-top: 1px;
+    }
+
+    nav ul {
+        flex-flow: column;
+    }
+
+    nav ul li {
+        border-bottom: 1px solid rgba(255, 255, 255, .7)
+    }
+}
+
+
+
+/* 中等手机以及竖屏平板 (portrait tablets and large phones, 600px and up) */
+
+
+
+@media only screen and (min-width: 600px) {}
+
+
+
+/* 横屏平板 (landscape tablets, 768px and up) */
+
+
+
+@media only screen and (min-width: 768px) {}
+
+
+
+/* 中小型笔记本电脑及台式机 (laptops/desktops, 992px and up) */
+
+
+
+@media only screen and (min-width: 992px) {}
+
+
+
+/* 宽屏笔记本及台式机 (large laptops and desktops, 1200px and up) */
+
+
+
+@media only screen and (min-width: 1200px) {}
